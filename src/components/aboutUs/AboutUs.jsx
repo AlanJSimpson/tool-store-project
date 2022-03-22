@@ -5,7 +5,7 @@ export default function AboutUs() {
   return (
     <Box
       sx={{
-        height: '60vh',
+        height: '600px',
         backgroundColor: '#efefef',
         display: 'flex',
         flexDirection: 'column',

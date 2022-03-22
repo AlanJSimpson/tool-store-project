@@ -5,7 +5,6 @@ export default function NavBar() {
   return (
     <Grid
       container
-      xs={12}
       sx={{
         display: 'flex',
         backgroundColor: 'var(--primary-color)',
@@ -30,7 +29,7 @@ export default function NavBar() {
       <Grid item xs={6}>
         <Grid
           container
-          spacing={8}
+          spacing={4}
           sx={{
             display: 'flex',
           }}
