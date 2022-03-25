@@ -2,6 +2,7 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 /**
  *
@@ -47,9 +48,13 @@ export default function CustomMenu({ buttonName, menuOptions }) {
         {menuOptions.map((menuOption, index) => {
           return (
             <MenuItem key={index} onClick={handleClose}>
-              <a target='_blank' href={menuOption.href} rel='noreferrer'>
-                {menuOption.label}
-              </a>
+              {menuOption.isInternal ? (
+                <Link to={menuOption.href}>{menuOption.label}</Link>
+              ) : (
+                <a target='_blank' href={menuOption.href} rel='noreferrer'>
+                  {menuOption.label}
+                </a>
+              )}
             </MenuItem>
           );
         })}

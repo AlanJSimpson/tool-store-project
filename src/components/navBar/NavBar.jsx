@@ -72,7 +72,10 @@ export default function NavBar() {
             <CustomMenu
               buttonName='Treinamento'
               menuOptions={[
-                { label: 'Nossos treinamentos', href: '#' },
+                {
+                  label: 'Nossos treinamentos',
+                  href: '#',
+                },
                 { label: 'Solicite um treinamento', href: '#' },
               ]}
             />
@@ -81,7 +84,7 @@ export default function NavBar() {
             <CustomMenu
               buttonName='Sustentabilidade'
               menuOptions={[
-                { label: 'Reciclagem de metal duro', href: '#' },
+                { label: 'Reciclagem de metal duro', href: '/recycling', isInternal: true },
                 { label: 'Recondicionamento', href: '#' },
               ]}
             />
