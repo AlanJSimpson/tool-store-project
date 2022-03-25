@@ -42,7 +42,6 @@ export default function Card({
         fontSize='1.6rem'
         fontWeight='bold'
         textAlign='center'
-        paddinY='2rem'
         variant='body2'
         color='white'
       >

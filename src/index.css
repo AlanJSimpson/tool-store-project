@@ -8,6 +8,11 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--secondary-color);
+}
+
+a:visited {
+  color: var(--secondary-color);
 }
 
 code {
