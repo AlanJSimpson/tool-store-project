@@ -84,8 +84,16 @@ export default function NavBar() {
             <CustomMenu
               buttonName='Sustentabilidade'
               menuOptions={[
-                { label: 'Reciclagem de metal duro', href: '/recycling', isInternal: true },
-                { label: 'Recondicionamento', href: '#' },
+                {
+                  label: 'Reciclagem de metal duro',
+                  href: '/sustentabilidade/reciclagem',
+                  isInternal: true,
+                },
+                {
+                  label: 'Recondicionamento',
+                  href: '/sustentabilidade/recondicionamento',
+                  isInternal: true,
+                },
               ]}
             />
           </Grid>
