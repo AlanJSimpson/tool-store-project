@@ -32,7 +32,8 @@ export default function CustomMenu({ buttonName, menuOptions }) {
         aria-haspopup='true'
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-        sx={{ color: 'var(--secondary-color)', fontSize: '1.5rem' }}
+        sx={{ color: 'var(--secondary-color)', padding: 0 }}
+        className='navbar-options'
       >
         {buttonName}
       </Button>

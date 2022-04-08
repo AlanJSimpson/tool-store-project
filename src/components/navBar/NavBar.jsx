@@ -1,19 +1,30 @@
+import { useMediaQuery } from '@material-ui/core';
 import { Box, Grid, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import logoPeraltech from '../../assets/images/LOGO_EM_TRANSPARENCIA.png';
 import CustomMenu from '../menu/customMenu';
 
 export default function NavBar() {
+  const isHDResolution = useMediaQuery('(max-width: 1480px)');
   return (
     <Grid
       container
+      columns={12}
       sx={{
         display: 'flex',
         backgroundColor: 'var(--primary-color)',
         alignItems: 'center',
       }}
     >
-      <Grid item xs={6} sx={{ paddingLeft: '6rem' }}>
+      <Grid
+        sx={[
+          { paddingLeft: '6rem', width: '50%' },
+          isHDResolution && {
+            width: '40%',
+          },
+        ]}
+        item
+      >
         <Link to='/'>
           <Box
             sx={{
@@ -30,7 +41,15 @@ export default function NavBar() {
           </Box>
         </Link>
       </Grid>
-      <Grid item xs={6}>
+      <Grid
+        item
+        sx={[
+          { width: '50%' },
+          isHDResolution && {
+            width: '60%',
+          },
+        ]}
+      >
         <Grid
           container
           spacing={4}
@@ -39,7 +58,7 @@ export default function NavBar() {
             alignItems: 'center',
           }}
         >
-          <Grid item fontSize='1.6rem'>
+          <Grid item>
             <CustomMenu
               buttonName='Digital'
               menuOptions={[
@@ -68,7 +87,7 @@ export default function NavBar() {
               ]}
             />
           </Grid>
-          <Grid item fontSize='1.6rem'>
+          <Grid item>
             <CustomMenu
               buttonName='Treinamento'
               menuOptions={[
@@ -80,7 +99,7 @@ export default function NavBar() {
               ]}
             />
           </Grid>
-          <Grid item fontSize='1.6rem'>
+          <Grid item>
             <CustomMenu
               buttonName='Sustentabilidade'
               menuOptions={[
@@ -103,12 +122,26 @@ export default function NavBar() {
                 textTransform: 'uppercase',
                 color: 'var(--secondary-color)',
                 fontWeight: 'bold',
-                fontSize: '1.5rem',
               }}
               component='span'
               variant='body2'
+              className='navbar-options'
             >
-              <Link to='/aboutus'>Quem somos</Link>
+              <Link to='/quem-somos'>Quem somos</Link>
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Typography
+              sx={{
+                textTransform: 'uppercase',
+                color: 'var(--secondary-color)',
+                fontWeight: 'bold',
+              }}
+              component='span'
+              variant='body2'
+              className='navbar-options'
+            >
+              <Link to='/contato'>Contato</Link>
             </Typography>
           </Grid>
         </Grid>
