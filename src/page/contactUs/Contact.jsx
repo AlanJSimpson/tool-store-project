@@ -1,4 +1,4 @@
-import { init } from '@emailjs/browser';
+import emailjs, { init } from '@emailjs/browser';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import {
   Box,
@@ -31,7 +31,7 @@ export default function Contact() {
   };
 
   const sendEmail = () => {
-    /*  emailjs.send(
+    emailjs.send(
       process.env.REACT_APP_SERVICE_ID,
       process.env.REACT_APP_TEMPLATE_ID,
       {
@@ -41,7 +41,7 @@ export default function Contact() {
         subject,
         message,
       }
-    ); */
+    );
     setShowWhatsAppScreen(true);
   };
 
