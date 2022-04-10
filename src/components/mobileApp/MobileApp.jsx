@@ -55,7 +55,11 @@ export default function MobileApp() {
             >
               Machining Calculator
             </Typography>
-            <a href='https://apps.apple.com/br/app/machining-calculator/id389011280'>
+            <a
+              href='https://apps.apple.com/br/app/machining-calculator/id389011280'
+              target='_blank'
+              rel='noreferrer'
+            >
               <Typography component='span' variant='body2' fontSize='1.1rem'>
                 Apple Store
               </Typography>
@@ -101,7 +105,11 @@ export default function MobileApp() {
             >
               Machining Calculator
             </Typography>
-            <a href='https://apps.apple.com/us/app/online-offer/id977551106'>
+            <a
+              href='https://apps.apple.com/us/app/online-offer/id977551106'
+              target='_blank'
+              rel='noreferrer'
+            >
               <Typography component='span' variant='body2' fontSize='1.1rem'>
                 Apple Store
               </Typography>
@@ -148,7 +156,11 @@ export default function MobileApp() {
             >
               Tool Wear Analyzer
             </Typography>
-            <a href='https://apps.apple.com/us/app/online-offer/id977551106'>
+            <a
+              href='https://apps.apple.com/us/app/online-offer/id977551106'
+              target='_blank'
+              rel='noreferrer'
+            >
               <Typography component='span' variant='body2' fontSize='1.1rem'>
                 Apple Store
               </Typography>
@@ -195,7 +207,11 @@ export default function MobileApp() {
             >
               Start values
             </Typography>
-            <a href='https://apps.apple.com/us/app/online-offer/id977551106'>
+            <a
+              href='https://apps.apple.com/us/app/online-offer/id977551106'
+              target='_blank'
+              rel='noreferrer'
+            >
               <Typography component='span' variant='body2' fontSize='1.1rem'>
                 Apple Store
               </Typography>
