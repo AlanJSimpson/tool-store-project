@@ -1,3 +1,12 @@
+# Enveriment Expected
+
+REACT_APP_SERVICE_ID
+REACT_APP_TEMPLATE_ID
+REACT_APP_USER_ID
+REACT_APP_TEL_ENGENHARIA
+REACT_APP_TEL_COMERCIAL
+REACT_APP_TEL_SOLICITE_VISITA
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

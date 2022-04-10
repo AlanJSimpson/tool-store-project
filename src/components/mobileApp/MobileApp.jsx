@@ -1,3 +1,4 @@
+import { useMediaQuery } from '@material-ui/core';
 import { Box, Grid, Typography } from '@mui/material';
 import iFind from '../../assets/images/ifindIcon.png';
 import machiningCalculator from '../../assets/images/machining-calculator.png';
@@ -5,8 +6,16 @@ import startValues from '../../assets/images/start-values-icon.png';
 import toolWearAnalyzer from '../../assets/images/tool-war-analyzer-icon.png';
 
 export default function MobileApp() {
+  const isHDResolution = useMediaQuery('(max-width: 1500px)');
   return (
-    <Box sx={{ paddingBottom: '5rem' }}>
+    <Box
+      sx={[
+        { paddingBottom: '5rem' },
+        isHDResolution && {
+          paddingTop: '15rem',
+        },
+      ]}
+    >
       <Typography
         component='h3'
         variant='h4'
