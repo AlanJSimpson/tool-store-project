@@ -7,6 +7,11 @@ REACT_APP_TEL_ENGENHARIA
 REACT_APP_TEL_COMERCIAL
 REACT_APP_TEL_SOLICITE_VISITA
 
+# Biblioteca de terceiros
+
+Foi utilizado a biblioteca [EmailJS](https://www.emailjs.com), ao qual é necessário para definitr um template de email a ser recebido na aplicação.
+Ao fazer um cadastro nessa página, você poderá obter acesso as contantes definidas nas variáveis de ambiente.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
