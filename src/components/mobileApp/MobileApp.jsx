@@ -1,18 +1,19 @@
-import { useMediaQuery } from '@material-ui/core';
-import { Box, Grid, Typography } from '@mui/material';
-import iFind from '../../assets/images/ifindIcon.png';
-import machiningCalculator from '../../assets/images/machining-calculator.png';
-import startValues from '../../assets/images/start-values-icon.png';
-import toolWearAnalyzer from '../../assets/images/tool-war-analyzer-icon.png';
+import { useMediaQuery } from "@material-ui/core";
+import { Box, Grid, Typography } from "@mui/material";
+import iFind from "../../assets/images/ifindIcon.png";
+import machiningCalculator from "../../assets/images/machining-calculator.png";
+import startValues from "../../assets/images/start-values-icon.png";
+import toolWearAnalyzer from "../../assets/images/tool-war-analyzer-icon.png";
 
 export default function MobileApp() {
-  const isHDResolution = useMediaQuery('(max-width: 1500px)');
+  const isHDResolution = useMediaQuery("(max-width: 1500px)");
   return (
     <Box
+      id='mobile-app'
       sx={[
-        { paddingBottom: '5rem' },
+        { paddingBottom: "5 rem" },
         isHDResolution && {
-          paddingTop: '15rem',
+          paddingTop: "15rem",
         },
       ]}
     >
@@ -22,6 +23,7 @@ export default function MobileApp() {
         fontWeight='bold'
         textAlign='center'
         paddingBottom='6rem'
+        fontSize='1.6rem'
       >
         Aplicativos Sandvik
       </Typography>
@@ -33,24 +35,24 @@ export default function MobileApp() {
           alignItems='center'
           justifyContent='center'
         >
-          <Box sx={{ width: '20%', borderRadius: '25px' }}>
+          <Box sx={{ width: "20%", borderRadius: "25px" }}>
             <img
               height='100%'
               width='100%'
               src={machiningCalculator}
               alt='Icone do aplicativo Machining calculator'
-              style={{ borderRadius: '25px' }}
+              style={{ borderRadius: "25px" }}
             />
           </Box>
-          <Box sx={{ paddingLeft: '1rem' }}>
+          <Box sx={{ paddingLeft: "1rem" }}>
             <Typography
               component='span'
               variant='body2'
               sx={{
-                fontWeight: 'bold',
-                display: 'flex',
-                flexDirection: 'column',
-                fontSize: '1.4rem',
+                fontWeight: "bold",
+                display: "flex",
+                flexDirection: "column",
+                fontSize: "1.4rem",
               }}
             >
               Machining Calculator
@@ -83,24 +85,24 @@ export default function MobileApp() {
           alignItems='center'
           justifyContent='center'
         >
-          <Box sx={{ width: '20%', borderRadius: '25px' }}>
+          <Box sx={{ width: "20%", borderRadius: "25px" }}>
             <img
               height='100%'
               width='100%'
               src={iFind}
               alt='Icone do aplicativo iFind'
-              style={{ borderRadius: '25px' }}
+              style={{ borderRadius: "25px" }}
             />
           </Box>
-          <Box sx={{ paddingLeft: '1rem' }}>
+          <Box sx={{ paddingLeft: "1rem" }}>
             <Typography
               component='span'
               variant='body2'
               sx={{
-                fontWeight: 'bold',
-                display: 'flex',
-                flexDirection: 'column',
-                fontSize: '1.4rem',
+                fontWeight: "bold",
+                display: "flex",
+                flexDirection: "column",
+                fontSize: "1.4rem",
               }}
             >
               Machining Calculator
@@ -134,24 +136,24 @@ export default function MobileApp() {
           justifyContent='center'
           paddingRight='25px'
         >
-          <Box sx={{ width: '20%', borderRadius: '25px' }}>
+          <Box sx={{ width: "20%", borderRadius: "25px" }}>
             <img
               height='100%'
               width='100%'
               src={toolWearAnalyzer}
               alt='Icone do aplicativo iFind'
-              style={{ borderRadius: '25px' }}
+              style={{ borderRadius: "25px" }}
             />
           </Box>
-          <Box sx={{ paddingLeft: '1rem' }}>
+          <Box sx={{ paddingLeft: "1rem" }}>
             <Typography
               component='span'
               variant='body2'
               sx={{
-                fontWeight: 'bold',
-                display: 'flex',
-                flexDirection: 'column',
-                fontSize: '1.4rem',
+                fontWeight: "bold",
+                display: "flex",
+                flexDirection: "column",
+                fontSize: "1.4rem",
               }}
             >
               Tool Wear Analyzer
@@ -185,24 +187,24 @@ export default function MobileApp() {
           justifyContent='center'
           paddingRight='25px'
         >
-          <Box sx={{ width: '20%', borderRadius: '25px' }}>
+          <Box sx={{ width: "20%", borderRadius: "25px" }}>
             <img
               height='100%'
               width='100%'
               src={startValues}
               alt='Icone do aplicativo iFind'
-              style={{ borderRadius: '25px' }}
+              style={{ borderRadius: "25px" }}
             />
           </Box>
-          <Box sx={{ paddingLeft: '1rem' }}>
+          <Box sx={{ paddingLeft: "1rem" }}>
             <Typography
               component='span'
               variant='body2'
               sx={{
-                fontWeight: 'bold',
-                display: 'flex',
-                flexDirection: 'column',
-                fontSize: '1.4rem',
+                fontWeight: "bold",
+                display: "flex",
+                flexDirection: "column",
+                fontSize: "1.4rem",
               }}
             >
               Start values
