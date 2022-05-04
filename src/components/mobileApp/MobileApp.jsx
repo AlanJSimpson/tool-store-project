@@ -11,9 +11,9 @@ export default function MobileApp() {
     <Box
       id='mobile-app'
       sx={[
-        { paddingBottom: "5 rem" },
+        { paddingBottom: "10rem" },
         isHDResolution && {
-          paddingTop: "15rem",
+          paddingTop: "10rem",
         },
       ]}
     >
@@ -94,7 +94,7 @@ export default function MobileApp() {
               style={{ borderRadius: "25px" }}
             />
           </Box>
-          <Box sx={{ paddingLeft: "1rem" }}>
+          <Box sx={{ paddingLeft: "1rem", marginLeft: "1rem" }}>
             <Typography
               component='span'
               variant='body2'
@@ -105,7 +105,7 @@ export default function MobileApp() {
                 fontSize: "1.4rem",
               }}
             >
-              Machining Calculator
+              IFind
             </Typography>
             <a
               href='https://apps.apple.com/us/app/online-offer/id977551106'
