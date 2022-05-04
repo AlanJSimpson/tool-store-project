@@ -27,18 +27,18 @@ export default function CustomMenu({ buttonName, menuOptions }) {
   return (
     <div>
       <Button
-        id="basic-button"
+        id='basic-button'
         aria-controls={open ? "basic-menu" : undefined}
-        aria-haspopup="true"
+        aria-haspopup='true'
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
         sx={{ color: "var(--secondary-color)", padding: 0, fontWeight: "bold" }}
-        className="navbar-options"
+        className='navbar-options'
       >
         {buttonName}
       </Button>
       <Menu
-        id="basic-menu"
+        id='basic-menu'
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
@@ -50,12 +50,14 @@ export default function CustomMenu({ buttonName, menuOptions }) {
           return (
             <MenuItem key={index} onClick={handleClose}>
               {menuOption.isInternal ? (
-                <Link to={menuOption.href}>{menuOption.label}</Link>
+                <Link state={menuOption.state} to={menuOption.href}>
+                  {menuOption.label}
+                </Link>
               ) : (
                 <a
                   target={menuOption.target}
                   href={menuOption.href}
-                  rel="noreferrer"
+                  rel='noreferrer'
                 >
                   {menuOption.label}
                 </a>

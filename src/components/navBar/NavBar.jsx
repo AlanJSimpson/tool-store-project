@@ -105,7 +105,12 @@ export default function NavBar() {
                   href: "https://www.sandvik.coromant.com/pt-pt/events_training/pages/default.aspx?country=br",
                   target: "_blank",
                 },
-                { label: "Solicite um treinamento", href: "/contato" },
+                {
+                  label: "Solicite um treinamento",
+                  href: "/contato",
+                  isInternal: true,
+                  state: { contato: "Treinamentos" },
+                },
               ]}
             />
           </Grid>

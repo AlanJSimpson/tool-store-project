@@ -12,14 +12,16 @@ import { useState } from "react";
 import Footer from "../../components/footer/Footer";
 import NavBar from "../../components/navBar/NavBar";
 import SimpleSelect from "../../components/simpleSelect/SimpleSelect";
+import { useLocation } from "react-router-dom";
 
 const FACTORY_IMAGE =
   "https://images.unsplash.com/photo-1566688045489-95fddaab0c28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80";
 
 export default function Contact() {
-  init(process.env.REACT_APP_USER_ID);
-
-  const [sector, setSector] = useState("");
+  init(process.env.REACT_APP_PUBLIC_KEY);
+  const location = useLocation();
+  const initialSelector = location.state?.contato || "";
+  const [sector, setSector] = useState(initialSelector);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
