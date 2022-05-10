@@ -1,8 +1,8 @@
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 /**
  *
@@ -28,11 +28,11 @@ export default function CustomMenu({ buttonName, menuOptions }) {
     <div>
       <Button
         id='basic-button'
-        aria-controls={open ? 'basic-menu' : undefined}
+        aria-controls={open ? "basic-menu" : undefined}
         aria-haspopup='true'
-        aria-expanded={open ? 'true' : undefined}
+        aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
-        sx={{ color: 'var(--secondary-color)', padding: 0, fontWeight: 'bold' }}
+        sx={{ color: "var(--secondary-color)", padding: 0, fontWeight: "bold" }}
         className='navbar-options'
       >
         {buttonName}
@@ -43,16 +43,22 @@ export default function CustomMenu({ buttonName, menuOptions }) {
         open={open}
         onClose={handleClose}
         MenuListProps={{
-          'aria-labelledby': 'basic-button',
+          "aria-labelledby": "basic-button",
         }}
       >
         {menuOptions.map((menuOption, index) => {
           return (
             <MenuItem key={index} onClick={handleClose}>
               {menuOption.isInternal ? (
-                <Link to={menuOption.href}>{menuOption.label}</Link>
+                <Link state={menuOption.state} to={menuOption.href}>
+                  {menuOption.label}
+                </Link>
               ) : (
-                <a target='_blank' href={menuOption.href} rel='noreferrer'>
+                <a
+                  target={menuOption.target}
+                  href={menuOption.href}
+                  rel='noreferrer'
+                >
                   {menuOption.label}
                 </a>
               )}

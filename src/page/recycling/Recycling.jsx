@@ -1,17 +1,22 @@
-import { Box, Container, Typography } from '@mui/material';
-import hardMetalRecycling from '../../assets/images/hardMetalRecycling.png';
-import recyclingCircle from '../../assets/images/recycling-circle.png';
-import transportBox from '../../assets/images/transportBox.png';
-import zeroWaste from '../../assets/images/zero-waste.png';
-import Footer from '../../components/footer/Footer';
-import NavBar from '../../components/navBar/NavBar';
+import { Box, Container, Typography } from "@mui/material";
+import hardMetalRecycling from "../../assets/images/hardMetalRecycling.png";
+import recyclingCircle from "../../assets/images/recycling-circle.png";
+import transportBox from "../../assets/images/transportBox.png";
+import zeroWaste from "../../assets/images/zero-waste.png";
+import Footer from "../../components/footer/Footer";
+import NavBar from "../../components/navBar/NavBar";
 export default function Recycling() {
   return (
     <Box>
       <NavBar />
       <Container maxWidth='xl'>
-        <Box sx={{ paddingTop: '4rem', paddingBottom: '5rem' }}>
-          <Typography component='h2' variant='h3' fontWeight='bold'>
+        <Box sx={{ paddingTop: "4rem", paddingBottom: "5rem" }}>
+          <Typography
+            component='h2'
+            variant='h3'
+            fontWeight='bold'
+            fontSize='2rem'
+          >
             Reciclagem de metal duro
           </Typography>
           <Typography component='h4' variant='h5' fontStyle='italic'>
@@ -26,6 +31,7 @@ export default function Recycling() {
               component='h4'
               variant='h4'
               fontWeight='bold'
+              fontSize='1.6rem'
             >
               Circularidade do metal duro
             </Typography>
@@ -33,7 +39,7 @@ export default function Recycling() {
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
             >
               A maior parte da matéria-prima usada em nossas ferramentas de
               metal duro vem do que você pode chamar de sucata. Compramos de
@@ -44,8 +50,8 @@ export default function Recycling() {
             </Typography>
             <Box
               sx={{
-                width: '50%',
-                paddingY: '4rem',
+                width: "50%",
+                paddingY: "4rem",
               }}
             >
               <img
@@ -62,6 +68,7 @@ export default function Recycling() {
               component='h4'
               variant='h4'
               fontWeight='bold'
+              fontSize='1.6rem'
             >
               Peça uma caixa de reciclagem
             </Typography>
@@ -69,7 +76,7 @@ export default function Recycling() {
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
               paddingBottom='2rem'
             >
               Você precisa de uma caixa para suas fresas de topo, pastilhas,
@@ -82,7 +89,7 @@ export default function Recycling() {
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
             >
               91617 - Caixa de coleta (amarela)
             </Typography>
@@ -90,7 +97,7 @@ export default function Recycling() {
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
             >
               92994 - Caixa de transporte para ferramentas inteiriças de metal
               duro
@@ -99,12 +106,12 @@ export default function Recycling() {
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
             >
               92995 - Caixa de transporte para pastilhas
             </Typography>
 
-            <Box sx={{ width: '50%', paddingY: '2rem' }}>
+            <Box sx={{ width: "50%", paddingY: "2rem" }}>
               <img
                 height='100%'
                 width='100%'
@@ -119,6 +126,7 @@ export default function Recycling() {
               component='h4'
               variant='h4'
               fontWeight='bold'
+              fontSize='1.6rem'
             >
               Circularidade de metal duro - reduzir, reutilizar, refazer,
               reciclar
@@ -127,7 +135,7 @@ export default function Recycling() {
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
               paddingBottom='2rem'
             >
               A circularidade de metal duro não oferece somente benefícios
@@ -136,7 +144,7 @@ export default function Recycling() {
               Porém, os materiais usados para fazer essas ferramentas continuam
               valiosos.
             </Typography>
-            <Box sx={{ width: '50%', paddingBottom: '2rem' }}>
+            <Box sx={{ width: "50%", paddingBottom: "2rem" }}>
               <img
                 width='100%'
                 height='100%'
@@ -148,7 +156,7 @@ export default function Recycling() {
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
               paddingBottom='2rem'
             >
               Para reduzir o uso de material virgem como o tungstênio, já
@@ -171,7 +179,7 @@ export default function Recycling() {
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
               paddingBottom='2rem'
             >
               Queremos que você use as ferramentas de corte pelo maior tempo
@@ -195,6 +203,7 @@ export default function Recycling() {
               component='h4'
               variant='h4'
               fontWeight='bold'
+              fontSize='1.6rem'
             >
               Vamos lutar juntos contra o desperdício
             </Typography>
@@ -202,7 +211,7 @@ export default function Recycling() {
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
               paddingBottom='2rem'
             >
               Lembre-se: sua sucata não é lixo. Certifique-se de classificar
@@ -219,6 +228,7 @@ export default function Recycling() {
               component='h4'
               variant='h4'
               fontWeight='bold'
+              fontSize='1.6rem'
             >
               Como enviar suas ferramentas usadas para reciclarmos
             </Typography>
@@ -226,7 +236,7 @@ export default function Recycling() {
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
               paddingBottom='2rem'
             >
               Deixamos caixas de coleta em sua fábrica para você enchê-las.
@@ -238,7 +248,7 @@ export default function Recycling() {
               Se precisar de recomendações sobre como evitar furtos e roubos,
               fale conosco. Temos experiência em segurança.
             </Typography>
-            <Box sx={{ width: '70%', margin: '0 auto', paddingBottom: '2rem' }}>
+            <Box sx={{ width: "70%", margin: "0 auto", paddingBottom: "2rem" }}>
               <img
                 height='100%'
                 width='100%'
@@ -253,6 +263,7 @@ export default function Recycling() {
               component='h4'
               variant='h4'
               fontWeight='bold'
+              fontSize='1.6rem'
             >
               Economia de energia e diminuição das emissões de CO2
             </Typography>
@@ -260,7 +271,7 @@ export default function Recycling() {
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
               paddingBottom='2rem'
             >
               Os recursos do planeta não são infinitos e visamos reduzir nossa

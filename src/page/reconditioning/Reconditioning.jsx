@@ -1,15 +1,20 @@
-import { Box, Container, Typography } from '@mui/material';
-import toolBox from '../../assets/images/tool-box.png';
-import Footer from '../../components/footer/Footer';
-import NavBar from '../../components/navBar/NavBar';
+import { Box, Container, Typography } from "@mui/material";
+import toolBox from "../../assets/images/tool-box.png";
+import Footer from "../../components/footer/Footer";
+import NavBar from "../../components/navBar/NavBar";
 
 export default function Reconditioning() {
   return (
     <Box>
       <NavBar />
       <Container maxWidth='xl'>
-        <Box sx={{ paddingTop: '4rem', paddingBottom: '5rem' }}>
-          <Typography component='h2' variant='h3' fontWeight='bold'>
+        <Box sx={{ paddingTop: "4rem", paddingBottom: "5rem" }}>
+          <Typography
+            fontSize='2rem'
+            component='h2'
+            variant='h3'
+            fontWeight='bold'
+          >
             Recondicionamento de ferramentas usadas – uma ótima ideia
           </Typography>
           <Typography component='h4' variant='h5' fontStyle='italic'>
@@ -23,6 +28,7 @@ export default function Reconditioning() {
               component='h4'
               variant='h4'
               fontWeight='bold'
+              fontSize='1.6rem'
             >
               Aumente sua produtividade e consiga um processo de manufatura mais
               confiável.
@@ -32,7 +38,7 @@ export default function Reconditioning() {
                 <Typography fontSize='1.2rem' component='span' variant='body1'>
                   <a href='https://www.sandvik.coromant.com/pt-pt/contact/pages/findus.aspx'>
                     Entre em contato com seu representante Sandvik Coromant
-                  </a>{' '}
+                  </a>{" "}
                 </Typography>
                 <Typography fontSize='1.2rem' component='span' variant='body1'>
                   para solicitar uma caixa de Recondicionamento.
@@ -58,6 +64,7 @@ export default function Reconditioning() {
               component='h4'
               variant='h4'
               fontWeight='bold'
+              fontSize='1.6rem'
             >
               Centros de recondicionamento
             </Typography>
@@ -65,7 +72,7 @@ export default function Reconditioning() {
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
             >
               A Sandvik Coromant trabalha com centros de recondicionamento
               especializados na Europa, Ásia e Américas. Quase 100% do programa
@@ -81,6 +88,7 @@ export default function Reconditioning() {
               component='h4'
               variant='h4'
               fontWeight='bold'
+              fontSize='1.6rem'
             >
               Como podemos garantir o desempenho de uma nova ferramenta?
             </Typography>
@@ -88,7 +96,7 @@ export default function Reconditioning() {
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
             >
               Ao incorporar um processo no desenho de nossas ferramentas, o que
               permite a cópia exata em um recondicionamento futuro, podemos
@@ -104,6 +112,7 @@ export default function Reconditioning() {
               component='h4'
               variant='h4'
               fontWeight='bold'
+              fontSize='1.6rem'
             >
               Cuidando de seus interesses
             </Typography>
@@ -111,7 +120,7 @@ export default function Reconditioning() {
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
             >
               Nós incentivamos você a planejar o recondicionamento com
               antecedência para evitar interrupções desnecessárias em sua
@@ -130,6 +139,7 @@ export default function Reconditioning() {
               component='h4'
               variant='h4'
               fontWeight='bold'
+              fontSize='1.6rem'
             >
               Caixa de recondicionamento da Sandvik Coromant
             </Typography>
@@ -137,7 +147,7 @@ export default function Reconditioning() {
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
             >
               Nós cuidamos de suas ferramentas.
             </Typography>
@@ -145,7 +155,7 @@ export default function Reconditioning() {
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
             >
               Nossas caixas de recondicionamento estão disponíveis em dois
               tamanhos:
@@ -162,14 +172,14 @@ export default function Reconditioning() {
                 </Typography>
               </li>
             </ul>
-            <Box sx={{ width: '20%', paddingY: '2rem' }}>
+            <Box sx={{ width: "20%", paddingY: "2rem" }}>
               <img height='100%' width='100%' src={toolBox} alt='caixa' />
             </Box>
             <Typography
               component='p'
               variant='body1'
               textAlign='justify'
-              fontSize='1.3rem'
+              fontSize='1.2rem'
               paddingBottom='2rem'
             >
               Todas as caixas serão entregues com camadas de espuma para

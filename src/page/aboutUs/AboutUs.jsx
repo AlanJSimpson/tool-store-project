@@ -1,7 +1,7 @@
-import { Box, Typography } from '@mui/material';
-import logoPeraltech from '../../assets/images/LOGO_EM_TRANSPARENCIA.png';
-import Footer from '../../components/footer/Footer';
-import NavBar from '../../components/navBar/NavBar';
+import { Box, Typography } from "@mui/material";
+import logoPeraltech from "../../assets/images/LOGO_EM_TRANSPARENCIA.png";
+import Footer from "../../components/footer/Footer";
+import NavBar from "../../components/navBar/NavBar";
 
 export default function AboutUs() {
   return (
@@ -9,19 +9,20 @@ export default function AboutUs() {
       <NavBar />
       <Box
         sx={{
-          height: '70vh',
-          backgroundColor: '#efefef',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
+          height: "70vh",
+          backgroundColor: "#efefef",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
         <Typography
-          fontWeight={'bold'}
-          textAlign={'center'}
-          component={'h3'}
+          fontWeight={"bold"}
+          textAlign={"center"}
+          component={"h3"}
           variant='h4'
-          paddingTop={'4rem'}
+          paddingTop={"4rem"}
+          fontSize='1.6rem'
         >
           Quem somos?
         </Typography>
@@ -34,7 +35,7 @@ export default function AboutUs() {
         />
         <Typography
           component='span'
-          fontSize='1.6rem'
+          fontSize='1.3rem'
           fontWeight='200'
           paddingX='6rem'
           color='secondary'

@@ -1,5 +1,5 @@
-import emailjs, { init } from '@emailjs/browser';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import emailjs, { init } from "@emailjs/browser";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import {
   Box,
   Button,
@@ -7,23 +7,25 @@ import {
   Grid,
   TextField,
   Typography,
-} from '@mui/material';
-import { useState } from 'react';
-import Footer from '../../components/footer/Footer';
-import NavBar from '../../components/navBar/NavBar';
-import SimpleSelect from '../../components/simpleSelect/SimpleSelect';
+} from "@mui/material";
+import { useState } from "react";
+import Footer from "../../components/footer/Footer";
+import NavBar from "../../components/navBar/NavBar";
+import SimpleSelect from "../../components/simpleSelect/SimpleSelect";
+import { useLocation } from "react-router-dom";
 
 const FACTORY_IMAGE =
-  'https://images.unsplash.com/photo-1566688045489-95fddaab0c28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80';
+  "https://images.unsplash.com/photo-1566688045489-95fddaab0c28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80";
 
 export default function Contact() {
-  init(process.env.REACT_APP_USER_ID);
-
-  const [sector, setSector] = useState('');
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+  init(process.env.REACT_APP_PUBLIC_KEY);
+  const location = useLocation();
+  const initialSelector = location.state?.contato || "";
+  const [sector, setSector] = useState(initialSelector);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
   const [showWhatsAppScreen, setShowWhatsAppScreen] = useState(false);
 
   const handleSelectChange = (newSelectValue) => {
@@ -50,8 +52,8 @@ export default function Contact() {
       <NavBar />
       <Box
         sx={{
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url(${FACTORY_IMAGE})`,
         }}
@@ -61,21 +63,23 @@ export default function Contact() {
             <Grid
               item
               lg={6}
-              sx={{ height: '70vh', display: 'flex', alignItems: 'center' }}
+              sx={{ height: "70vh", display: "flex", alignItems: "center" }}
             >
-              <Box sx={{ textAlign: 'center' }}>
+              <Box sx={{ textAlign: "center" }}>
                 <Typography
                   component='h2'
                   variant='h3'
                   color='primary'
                   fontWeight='bold'
+                  fontSize='2.2rem'
                 >
                   Peraltech
                 </Typography>
                 <Typography
                   component='p'
                   variant='h4'
-                  sx={{ color: '#fff', fontWeight: 'bold', marginTop: '2rem' }}
+                  sx={{ color: "#fff", fontWeight: "bold", marginTop: "2rem" }}
+                  fontSize='1.5rem'
                 >
                   Solicite uma visita de nossos especialistas
                 </Typography>
@@ -85,30 +89,30 @@ export default function Contact() {
               item
               lg={6}
               sx={{
-                height: '70vh',
-                display: 'flex',
-                alignItems: 'center',
+                height: "70vh",
+                display: "flex",
+                alignItems: "center",
               }}
             >
               <Box
                 sx={{
-                  height: '70%',
-                  width: '100%',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  backgroundColor: '#fff',
-                  borderRadius: '10px',
-                  justifyContent: 'space-around',
-                  paddingX: '75px',
-                  paddingY: '20px',
+                  height: "70%",
+                  width: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  backgroundColor: "#fff",
+                  borderRadius: "10px",
+                  justifyContent: "space-around",
+                  paddingX: "75px",
+                  paddingY: "20px",
                 }}
               >
                 {showWhatsAppScreen ? (
                   <Box
                     sx={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      gap: '3rem',
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "3rem",
                     }}
                   >
                     <Typography
@@ -121,7 +125,7 @@ export default function Contact() {
                       Você também pode nos contatar por whatsapp
                     </Typography>
                     <Box
-                      sx={{ display: 'flex', justifyContent: 'space-around' }}
+                      sx={{ display: "flex", justifyContent: "space-around" }}
                     >
                       <Button
                         onClick={() => setShowWhatsAppScreen(false)}
@@ -134,10 +138,10 @@ export default function Contact() {
                         <a
                           target='_blank'
                           href={
-                            sector === 'Engenharia'
+                            sector === "Engenharia"
                               ? `https://wa.me/55${process.env.REACT_APP_TEL_ENGENHARIA}`
-                              : sector === 'Comercial' ||
-                                sector === 'Treinamentos'
+                              : sector === "Comercial" ||
+                                sector === "Treinamentos"
                               ? `https://wa.me/55${process.env.REACT_APP_TEL_COMERCIAL}`
                               : `https://wa.me/55${process.env.REACT_APP_TEL_SOLICITE_VISITA}`
                           }
@@ -156,22 +160,22 @@ export default function Contact() {
                         value={sector}
                         onSelectChange={handleSelectChange}
                         options={[
-                          { title: 'Engenharia', value: 'Engenharia' },
-                          { title: 'Comercial', value: 'Comercial' },
-                          { title: 'Treinamentos', value: 'Treinamentos' },
+                          { title: "Engenharia", value: "Engenharia" },
+                          { title: "Comercial", value: "Comercial" },
+                          { title: "Treinamentos", value: "Treinamentos" },
                           {
-                            title: 'Solicite uma visita',
-                            value: 'Solicite uma visita',
+                            title: "Solicite uma visita",
+                            value: "Solicite uma visita",
                           },
                         ]}
                       />
                     </Box>
                     <Box
                       sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'center',
-                        gap: '8px',
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        gap: "8px",
                       }}
                     >
                       <TextField
@@ -195,10 +199,10 @@ export default function Contact() {
                     </Box>
                     <Box
                       sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'center',
-                        width: '100%',
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        width: "100%",
                       }}
                     >
                       <TextField
@@ -210,7 +214,7 @@ export default function Contact() {
                         onInput={(e) => setMessage(e.target.value)}
                       />
                     </Box>
-                    <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+                    <Box sx={{ display: "flex", justifyContent: "center" }}>
                       <Button onClick={sendEmail} variant='contained'>
                         Enviar
                       </Button>

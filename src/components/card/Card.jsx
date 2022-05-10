@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography } from "@mui/material";
 
 export default function Card({
   srcImage,
@@ -11,24 +11,24 @@ export default function Card({
     <Box
       sx={[
         {
-          width: '230px',
-          height: '250px',
-          boxShadow: '2px 2px 2px 1px rgba(0, 0, 0, 0.2);',
-          backgroundColor: 'var(--secondary-color)',
-          borderRadius: '25px',
-          transition: 'transform 0.5s',
-          '&:hover': {
-            transform: 'scale(1.1,1.1)',
+          width: "12rem",
+          height: "12rem",
+          boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2);",
+          backgroundColor: "var(--secondary-color)",
+          borderRadius: "25px",
+          transition: "transform 0.5s",
+          "&:hover": {
+            transform: "scale(1.1,1.1)",
           },
         },
       ]}
     >
       <Box
         sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          width: '100%',
-          paddingY: '20px',
+          display: "flex",
+          justifyContent: "center",
+          width: "100%",
+          paddingY: "20px",
         }}
       >
         <img
@@ -39,7 +39,7 @@ export default function Card({
         />
       </Box>
       <Typography
-        fontSize='1.6rem'
+        fontSize='1.2rem'
         fontWeight='bold'
         textAlign='center'
         variant='body2'
