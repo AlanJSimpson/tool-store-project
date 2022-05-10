@@ -1,26 +1,26 @@
-import { useMediaQuery } from '@material-ui/core';
-import { Box, Grid, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
-import logoPeraltech from '../../assets/images/LOGO_EM_TRANSPARENCIA.png';
-import CustomMenu from '../menu/customMenu';
+import { useMediaQuery } from "@material-ui/core";
+import { Box, Grid, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
+import logoPeraltech from "../../assets/images/LOGO_EM_TRANSPARENCIA.png";
+import CustomMenu from "../menu/customMenu";
 
 export default function NavBar() {
-  const isHDResolution = useMediaQuery('(max-width: 1480px)');
+  const isHDResolution = useMediaQuery("(max-width: 1480px)");
   return (
     <Grid
       container
       columns={12}
       sx={{
-        display: 'flex',
-        backgroundColor: 'var(--primary-color)',
-        alignItems: 'center',
+        display: "flex",
+        backgroundColor: "var(--primary-color)",
+        alignItems: "center",
       }}
     >
       <Grid
         sx={[
-          { paddingLeft: '6rem', width: '50%' },
+          { paddingLeft: "6rem", width: "50%" },
           isHDResolution && {
-            width: '40%',
+            width: "40%",
           },
         ]}
         item
@@ -28,8 +28,8 @@ export default function NavBar() {
         <Link to='/'>
           <Box
             sx={{
-              width: '200px',
-              height: 'auto',
+              width: "200px",
+              height: "auto",
             }}
           >
             <img
@@ -44,9 +44,9 @@ export default function NavBar() {
       <Grid
         item
         sx={[
-          { width: '50%' },
+          { width: "50%" },
           isHDResolution && {
-            width: '60%',
+            width: "60%",
           },
         ]}
       >
@@ -54,35 +54,44 @@ export default function NavBar() {
           container
           spacing={4}
           sx={{
-            display: 'flex',
-            alignItems: 'center',
+            display: "flex",
+            alignItems: "center",
           }}
         >
           <Grid item>
             <CustomMenu
               buttonName='Digital'
               menuOptions={[
-                { label: 'Download app', href: '#' },
+                { label: "Download app", href: "#mobile-app", target: "_self" },
                 {
-                  label: 'Crie uma montagem',
-                  href: 'https://www.sandvik.coromant.com/pt-pt/products/coroplus-toollibrary/pages/online-tool-assembler.aspx',
+                  label: "Crie uma montagem",
+                  href: "https://www.sandvik.coromant.com/pt-pt/products/coroplus-toollibrary/pages/online-tool-assembler.aspx",
+                  target: "_blank",
                 },
                 {
-                  label: 'Cutting speed',
-                  href: 'https://www.sandvik.coromant.com/pt-pt/products/pages/toolguide.aspx',
-                },
-                { label: 'Nossos catálogos', href: '#' },
-                {
-                  label: 'Tool guide',
-                  href: 'https://www.sandvik.coromant.com/pt-pt/products/coroplus-toolguide/pages/default.aspx',
+                  label: "Cutting speed",
+                  href: "https://www.sandvik.coromant.com/pt-pt/products/pages/toolguide.aspx",
+                  target: "_blank",
                 },
                 {
-                  label: 'Usinagem Digital Coroplus',
-                  href: 'https://www.sandvik.coromant.com/pt-pt/campaigns/pages/coroplus.aspx?internal_camplink=coroplus&internal_camplink_type=highlight',
+                  label: "Nossos catálogos",
+                  href: "#catalogos",
+                  target: "_self",
                 },
                 {
-                  label: 'E-learning gratuito',
-                  href: 'https://www.sandvik.coromant.com/pt-pt/services/education/pages/e-learning.aspx',
+                  label: "Tool guide",
+                  href: "https://www.sandvik.coromant.com/pt-pt/products/coroplus-toolguide/pages/default.aspx",
+                  target: "_blank",
+                },
+                {
+                  label: "Usinagem Digital Coroplus",
+                  href: "https://www.sandvik.coromant.com/pt-pt/campaigns/pages/coroplus.aspx?internal_camplink=coroplus&internal_camplink_type=highlight",
+                  target: "_blank",
+                },
+                {
+                  label: "E-learning gratuito",
+                  href: "https://www.sandvik.coromant.com/pt-pt/services/education/pages/e-learning.aspx",
+                  target: "_blank",
                 },
               ]}
             />
@@ -92,10 +101,16 @@ export default function NavBar() {
               buttonName='Treinamento'
               menuOptions={[
                 {
-                  label: 'Nossos treinamentos',
-                  href: '#',
+                  label: "Nossos treinamentos",
+                  href: "https://www.sandvik.coromant.com/pt-pt/events_training/pages/default.aspx?country=br",
+                  target: "_blank",
                 },
-                { label: 'Solicite um treinamento', href: '#' },
+                {
+                  label: "Solicite um treinamento",
+                  href: "/contato",
+                  isInternal: true,
+                  state: { contato: "Treinamentos" },
+                },
               ]}
             />
           </Grid>
@@ -104,13 +119,13 @@ export default function NavBar() {
               buttonName='Sustentabilidade'
               menuOptions={[
                 {
-                  label: 'Reciclagem de metal duro',
-                  href: '/sustentabilidade/reciclagem',
+                  label: "Reciclagem de metal duro",
+                  href: "/sustentabilidade/reciclagem",
                   isInternal: true,
                 },
                 {
-                  label: 'Recondicionamento',
-                  href: '/sustentabilidade/recondicionamento',
+                  label: "Recondicionamento",
+                  href: "/sustentabilidade/recondicionamento",
                   isInternal: true,
                 },
               ]}
@@ -119,9 +134,9 @@ export default function NavBar() {
           <Grid item>
             <Typography
               sx={{
-                textTransform: 'uppercase',
-                color: 'var(--secondary-color)',
-                fontWeight: 'bold',
+                textTransform: "uppercase",
+                color: "var(--secondary-color)",
+                fontWeight: "bold",
               }}
               component='span'
               variant='body2'
@@ -133,9 +148,9 @@ export default function NavBar() {
           <Grid item>
             <Typography
               sx={{
-                textTransform: 'uppercase',
-                color: 'var(--secondary-color)',
-                fontWeight: 'bold',
+                textTransform: "uppercase",
+                color: "var(--secondary-color)",
+                fontWeight: "bold",
               }}
               component='span'
               variant='body2'
