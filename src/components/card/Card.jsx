@@ -28,7 +28,7 @@ export default function Card({
           display: "flex",
           justifyContent: "center",
           width: "100%",
-          paddingY: "20px",
+          padding: "1rem 0 0.5rem 0",
         }}
       >
         <img
