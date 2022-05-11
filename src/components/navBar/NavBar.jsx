@@ -88,11 +88,6 @@ export default function NavBar() {
                   href: "https://www.sandvik.coromant.com/pt-pt/campaigns/pages/coroplus.aspx?internal_camplink=coroplus&internal_camplink_type=highlight",
                   target: "_blank",
                 },
-                {
-                  label: "E-learning gratuito",
-                  href: "https://www.sandvik.coromant.com/pt-pt/services/education/pages/e-learning.aspx",
-                  target: "_blank",
-                },
               ]}
             />
           </Grid>
