@@ -2,8 +2,6 @@ import { Box, Grid, Typography } from "@mui/material";
 import education from "../../assets/images/Education.png";
 import engineeringImage from "../../assets/images/Engineering.png";
 import logistic from "../../assets/images/Logistic.png";
-import manufacture from "../../assets/images/Manufacture.png";
-import sustentability from "../../assets/images/Sustentability.png";
 import Card from "../card/Card";
 
 export default function Catalog() {
@@ -29,54 +27,52 @@ export default function Catalog() {
       <Box padding={"20px"}>
         <Grid container spacing={6} rowSpacing={8}>
           <Grid item xs>
-            <Card
-              srcImage={{ icon: engineeringImage }}
-              widthImage='100px'
-              heigth='auto'
-              altImage='engineering image'
+            <a
+              href='mailto:peraltech@peraltech.com '
+              target='_blank'
+              rel='noopener noreferrer'
             >
-              Engenharia
-            </Card>
+              <Card
+                srcImage={{ icon: engineeringImage }}
+                widthImage='100px'
+                heigth='auto'
+                altImage='engineering image'
+              >
+                Engenharia
+              </Card>
+            </a>
           </Grid>
           <Grid item xs>
-            <Card
-              srcImage={{ icon: manufacture }}
-              widthImage='100px'
-              heigth='auto'
-              altImage='manufacture icon'
+            <a
+              href='http://www.sandvik.coromant.com/pt-pt/services/logistics/pages/tool-logistics.aspx'
+              target='_blank'
+              rel='noopener noreferrer'
             >
-              Manufatura
-            </Card>
+              <Card
+                srcImage={{ icon: logistic }}
+                widthImage='100px'
+                heigth='auto'
+                altImage='logistic icon'
+              >
+                Logística
+              </Card>
+            </a>
           </Grid>
           <Grid item xs>
-            <Card
-              srcImage={{ icon: logistic }}
-              widthImage='100px'
-              heigth='auto'
-              altImage='logistic icon'
+            <a
+              href='https://www.sandvik.coromant.com/pt-pt/services/education/pages/e-learning.aspx'
+              target='_blank'
+              rel='noopener noreferrer'
             >
-              Logística
-            </Card>
-          </Grid>
-          <Grid item xs>
-            <Card
-              srcImage={{ icon: education }}
-              widthImage='100px'
-              heigth='auto'
-              altImage='education icon'
-            >
-              Treinamento
-            </Card>
-          </Grid>
-          <Grid item xs>
-            <Card
-              srcImage={{ icon: sustentability }}
-              widthImage='100px'
-              heigth='auto'
-              altImage='sustentability icon'
-            >
-              Sustentabilidade
-            </Card>
+              <Card
+                srcImage={{ icon: education }}
+                widthImage='100px'
+                heigth='auto'
+                altImage='logistic icon'
+              >
+                Aprenda sobre usinagem
+              </Card>
+            </a>
           </Grid>
         </Grid>
       </Box>
