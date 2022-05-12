@@ -5,6 +5,12 @@ import ferramentasRotativasImg from '../../assets/images/ferramentas-rotativas.j
 import ferramentasSolidasRotativas from '../../assets/images/ferramentas-solidas-rotativas.jpg';
 import hardPartTuningImg from '../../assets/images/hard-part-tuning.jpg';
 import manualTecnicoImg from '../../assets/images/manual-tecnico.jpg';
+import catalogoResumidoPDF from '../../assets/pdfs/CATALOGOS_RESUMIDOS_compressed.pdf';
+import ferramentasParaTorneamentoPDF from '../../assets/pdfs/Ferramentas_para_Torneamento_compressed.pdf';
+import ferramentasRotativas from '../../assets/pdfs/Ferramentas_Rotativas_compressed.pdf';
+import ferramentasSolidasRotativasPDF from '../../assets/pdfs/Fresas_Inteiricas_Metal_Duro_compressed.pdf';
+import manualTecnicoPDF from '../../assets/pdfs/Manual_Tecnico_Torneamento_compressed.pdf';
+import hardPartTuningPDF from '../../assets/pdfs/Torneamento_de_acos_endurecidos_compressed.pdf';
 import Footer from '../footer/Footer';
 import NavBar from '../navBar/NavBar';
 
@@ -38,9 +44,11 @@ export default function PDFPage() {
                   src={catalogoResumido}
                   alt='capa do pdf catalogo resumido'
                 />
-                <Button sx={{ marginY: '2rem' }} variant='contained'>
-                  Baixar
-                </Button>
+                <a href={catalogoResumidoPDF} download='catalogo_resumido'>
+                  <Button sx={{ marginY: '2rem' }} variant='contained'>
+                    Baixar
+                  </Button>
+                </a>
               </Box>
             </Grid>
             <Grid item lg={4} md={6} xs={12}>
@@ -50,9 +58,14 @@ export default function PDFPage() {
                   src={ferramentasParaTorneamentoImg}
                   alt='capa do pdf ferramentas para torneamento'
                 />
-                <Button sx={{ marginY: '2rem' }} variant='contained'>
-                  Baixar
-                </Button>
+                <a
+                  href={ferramentasParaTorneamentoPDF}
+                  download='ferramentas_para_torneamento'
+                >
+                  <Button sx={{ marginY: '2rem' }} variant='contained'>
+                    Baixar
+                  </Button>
+                </a>
               </Box>
             </Grid>
             <Grid item lg={4} md={6} xs={12}>
@@ -62,9 +75,11 @@ export default function PDFPage() {
                   src={ferramentasRotativasImg}
                   alt='capa do pdf ferramentas rotativas'
                 />
-                <Button sx={{ marginY: '2rem' }} variant='contained'>
-                  Baixar
-                </Button>
+                <a href={ferramentasRotativas} download='ferramentas_rotativas'>
+                  <Button sx={{ marginY: '2rem' }} variant='contained'>
+                    Baixar
+                  </Button>
+                </a>
               </Box>
             </Grid>
             <Grid item lg={4} md={6} xs={12}>
@@ -74,9 +89,14 @@ export default function PDFPage() {
                   src={ferramentasSolidasRotativas}
                   alt='capa do pdf ferramentas solidas rotativas'
                 />
-                <Button sx={{ marginY: '2rem' }} variant='contained'>
-                  Baixar
-                </Button>
+                <a
+                  href={ferramentasSolidasRotativasPDF}
+                  download='ferramentas_solidas_rotativas'
+                >
+                  <Button sx={{ marginY: '2rem' }} variant='contained'>
+                    Baixar
+                  </Button>
+                </a>
               </Box>
             </Grid>
             <Grid item lg={4} md={6} xs={12}>
@@ -86,9 +106,11 @@ export default function PDFPage() {
                   src={hardPartTuningImg}
                   alt='capa do pdf hard part tuning'
                 />
-                <Button sx={{ marginY: '2rem' }} variant='contained'>
-                  Baixar
-                </Button>
+                <a href={hardPartTuningPDF} download='hard_part_tuning'>
+                  <Button sx={{ marginY: '2rem' }} variant='contained'>
+                    Baixar
+                  </Button>
+                </a>
               </Box>
             </Grid>
             <Grid item lg={4} md={6} xs={12}>
@@ -98,9 +120,11 @@ export default function PDFPage() {
                   src={manualTecnicoImg}
                   alt='capa do pdf manual tecnico'
                 />
-                <Button sx={{ marginY: '2rem' }} variant='contained'>
-                  Baixar
-                </Button>
+                <a href={manualTecnicoPDF} download='manual_tecnico'>
+                  <Button sx={{ marginY: '2rem' }} variant='contained'>
+                    Baixar
+                  </Button>
+                </a>
               </Box>
             </Grid>
           </Grid>
