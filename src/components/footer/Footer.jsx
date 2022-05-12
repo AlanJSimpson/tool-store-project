@@ -1,14 +1,14 @@
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import { Box, Grid, IconButton, Typography } from "@mui/material";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import { Box, Grid, IconButton, Typography } from '@mui/material';
 
 export default function Footer() {
   return (
     <Grid
       container
       sx={{
-        backgroundColor: "var(--secondary-color)",
-        height: "20vh",
+        backgroundColor: 'var(--secondary-color)',
+        height: '20vh',
       }}
     >
       <Grid
@@ -29,7 +29,11 @@ export default function Footer() {
           Redes sociais
         </Typography>
         <Box>
-          <a href='https://www.facebook.com/PERALTECH' target='_blank'>
+          <a
+            href='https://www.facebook.com/PERALTECH'
+            target='_blank'
+            rel='noreferrer'
+          >
             <IconButton color='primary'>
               <FacebookIcon />
             </IconButton>
@@ -39,7 +43,11 @@ export default function Footer() {
           </a>
         </Box>
         <Box>
-          <a href='https://www.instagram.com/peraltech/' target='_blank'>
+          <a
+            href='https://www.instagram.com/peraltech/'
+            target='_blank'
+            rel='noreferrer'
+          >
             <IconButton color='primary'>
               <InstagramIcon />
             </IconButton>
