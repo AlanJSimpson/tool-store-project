@@ -7,8 +7,9 @@ export default function Footer() {
     <Grid
       container
       sx={{
-        backgroundColor: 'var(--secondary-color)',
-        height: '20vh',
+        backgroundColor: "var(--secondary-color)",
+        height: "20vh",
+        justifyContent: "space-around",
       }}
     >
       <Grid

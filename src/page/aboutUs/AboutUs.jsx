@@ -37,7 +37,8 @@ export default function AboutUs() {
           component='span'
           fontSize='1.3rem'
           fontWeight='200'
-          paddingX='6rem'
+          width='65%'
+          textAlign='justify'
           color='secondary'
         >
           A Peraltech é uma empresa de consultoria e distribuição de produtos da

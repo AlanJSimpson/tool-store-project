@@ -62,7 +62,11 @@ export default function NavBar() {
             <CustomMenu
               buttonName='Digital'
               menuOptions={[
-                { label: 'Download app', href: '#mobile-app', target: '_self' },
+                {
+                  label: "Download app",
+                  href: "/#mobile-app",
+                  target: "_self",
+                },
                 {
                   label: 'Crie uma montagem',
                   href: 'https://www.sandvik.coromant.com/pt-pt/products/coroplus-toollibrary/pages/online-tool-assembler.aspx',
