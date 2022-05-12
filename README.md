@@ -1,11 +1,23 @@
-# Enveriment Expected
+# Environment Expected
 
-REACT_APP_SERVICE_ID
-REACT_APP_TEMPLATE_ID
-REACT_APP_USER_ID
-REACT_APP_TEL_ENGENHARIA
-REACT_APP_TEL_COMERCIAL
-REACT_APP_TEL_SOLICITE_VISITA
+REACT_APP_SERVICE_ID  
+REACT_APP_TEMPLATE_ID  
+REACT_APP_USER_ID  
+REACT_APP_TEL_ENGENHARIA  
+REACT_APP_TEL_COMERCIAL  
+REACT_APP_TEL_SOLICITE_VISITA  
+
+# Biblioteca de terceiros
+
+Foi utilizado a biblioteca [EmailJS](https://www.emailjs.com), ao qual é necessário para definitr um template de email a ser recebido na aplicação.
+Ao fazer um cadastro nessa página, você poderá obter acesso as contantes definidas nas variáveis de ambiente.
+
+As variáveis que podem ser utilizadas para montar o seu template de email são:
+sector,  
+name,  
+email,  
+subject  
+message,
 
 # Getting Started with Create React App
 

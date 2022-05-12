@@ -1,5 +1,6 @@
 import { ThemeProvider } from '@mui/material';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import PDFPage from './components/pdfPage/PDFPage';
 import AboutUs from './page/aboutUs/AboutUs';
 import Contact from './page/contactUs/Contact';
 import Home from './page/home/Home';
@@ -20,6 +21,7 @@ function App() {
             element={<Reconditioning />}
           />
           <Route path='contato' element={<Contact />} />
+          <Route path='catalogo' element={<PDFPage />}></Route>
         </Routes>
       </ThemeProvider>
     </Router>
